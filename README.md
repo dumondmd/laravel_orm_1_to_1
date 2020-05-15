@@ -7,7 +7,7 @@ Curso de Laravel orm 1 to 1
 
 # MySQL
 
-Instale com *mysql -u root -p*
+Entre com *mysql -u root -p*
 
 ## Migraton dando erro
 ```
@@ -16,4 +16,24 @@ $table->id();
 Mudar para a versão antiga
 ```
 $table->increments('id');
+```
+
+# Tinker
+
+## Tinker exemplos
+
+Adicionando no banco de dados via terminal
+
+*php artisan tinker*
+
+```
+>>> $c = new App\Cliente
+=> App\Cliente {#3017}
+>>> $c->nome = "João da Silva"
+=> "João da Silva"
+>>> $c->telefone = "1145454545"
+=> "1145454545"
+>>> $c->save()
+=> true
+>>> 
 ```

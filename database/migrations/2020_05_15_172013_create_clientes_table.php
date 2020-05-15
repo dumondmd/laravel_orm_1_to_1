@@ -8,7 +8,7 @@ class CreateClientesTable extends Migration
 {
     /**
      * Run the migrations.
-     *$table->id();
+     *
      * @return void
      */
     public function up()
